@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="Aurora.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Aurora"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView x:Name="navView"
+                    PaneTitle="HeathCare"
+                    IsBackEnabled="True"
+                    IsSettingsVisible="False"
+                    ItemInvoked="navView_ItemInvoked">
+
+        <NavigationView.MenuItems>
+
+            <NavigationViewItem Content="Reception" 
+                                x:Name="Reception" 
+                                Tag="reception"
+                                Icon="Home"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem Content="Doctor Tablet" 
+                                x:Name="Doctor" 
+                                Tag="doctor"
+                                Icon="Caption"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem Content="Patient Tablet" 
+                                x:Name="Patient" 
+                                Tag="patient"
+                                Icon="CellPhone"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem Content="Patient Kiosk" 
+                                x:Name="Kiosk" 
+                                Tag="kiosk"
+                                Icon="AllApps"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem Content="Pharma Dashboard" 
+                                x:Name="Pharma" 
+                                Tag="pharma"
+                                Icon="GoToStart"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem Content="HMI Device" 
+                                x:Name="HMI" 
+                                Tag="hmi"
+                                Icon="Manage"/>
+            <NavigationViewItemSeparator/>
+            <NavigationViewItem Content="Hospital Management" 
+                                x:Name="Hospital" 
+                                Tag="hospital"
+                                Icon="Add"/>
+        </NavigationView.MenuItems>
+
+        <Frame x:Name="contentFrame">
+        </Frame>
+
+    </NavigationView>
+
+</Page>
